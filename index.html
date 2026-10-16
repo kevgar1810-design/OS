@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RedOS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY5p2dOc4jZQ5EmrU80lZaQlBS8Ag1CO24URFqsnDZ1A&s=10'); background-size: cover;">
+
+  <!-- Enter Screen -->
+  <div id="welcome" class="window" style="border-style: solid; width: fit-content; padding: 20px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: maroon;">
+
+    <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+      <h1>RedOS</h1>
+      <p class="closebutton" id="welcomeclose">Close</p>
+    </div>
+
+    <div class="windowheader" id="welcomeheader" style="box-sizing: border-box; background-color: rgba(0, 0, 0, 0.4); color: white; width: 100%; display: flex; align-items: center; cursor: move; justify-content: center; margin-top: 8px;">
+      <p>drag</p>
+    </div>
+
+    <h2>Introduction</h2>
+    <p>Hello World!</p>
+
+    <img style="width: 320px; height: 250px; object-fit: cover;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2aefbrLfjUQIpFQoMnNqx-PUs9rtsFhyWb53cIR7uWA&s">
+
+    <br>
+    <a href="https://www.instagram.com/dumbass3211_2">My Insta</a>
+
+    <p>Hello this is a test trial for a project I want to possibly make in the future</p>
+  </div>
+
+
+  <!-- Top Bar and Clock -->
+  <div id="topBar" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; position: fixed; top: 0; left: 0; width: 100%; padding: 10px 20px; box-sizing: border-box; background-color: rgba(0, 0, 0, 0.4); color: white; font-family: sans-serif; z-index: 1000;">
+
+    <p style="margin: 0; cursor: pointer;" id="welcomeopen">RedOS</p>
+    <p id="timeElement" style="margin: 0;">Loading time...</p>
+  </div>
+
+
+  <!-- Desktop App Icon -->
+  <div id="desktopApps" style="padding-top: 64px; padding-left: 16px;">
+
+    <div id="notesIcon" class="selected" style="text-align: center; padding: 16px; width: fit-content; cursor: pointer;">
+      <img style="width: 64px; height: 64px; border-radius: 16px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOEj9YWM6qADM7TWq8utABlPUr4a-iw8ImN1prQQmH-A&s=10">
+      <p style="margin: 0;">Notepedia</p>
+    </div>
+
+  </div>
+
+
+  <!-- Notepedia App Window -->
+  <div id="notes" class="window" style="cursor: default; border-style: solid; width: fit-content; padding: 20px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: maroon; display: none;">
+
+    <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+      <p class="closebutton" id="notesclose">Close</p>
+    </div>
+
+    <div class="windowheader" id="notesheader" style="box-sizing: border-box; background-color: rgba(0, 0, 0, 0.4); color: white; width: 100%; display: flex; align-items: center; cursor: move; justify-content: center; margin-top: 8px;">
+      <p>drag</p>
+    </div>
+
+
+<div id="notesAppContent" style="display: flex; flex-direction: row; gap: 12px; margin: 8px; padding: 12px; width: 520px; min-height: 300px; box-sizing: border-box; background-color: white; color: #222; border-radius: 12px;">
+
+  <!-- Sidebar: the list of notes -->
+  <div id="sidebar" style="width: 150px; flex-shrink: 0; padding: 10px; background-color: #eeeeee; border-radius: 8px;">
+    <p id="sidebarTitle">My notes</p>
+  </div>
+
+  <!-- Main area: the selected note -->
+  <div id="noteContent" style="flex: 1; min-width: 0; padding: 10px; background-color: #ffffff; border-radius: 8px;">
+    <h3>Welcome to Notepedia!</h3>
+    <p>Choose a note from the list to read it.</p>
+  </div>
+
+</div>
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
